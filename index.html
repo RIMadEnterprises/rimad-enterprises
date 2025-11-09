@@ -1,87 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RIMad Enterprises</title>
-<link rel="stylesheet" href="/style.css">
-<script src="/script.js" defer></script>
-<meta name="description" content="RIMad Enterprises – Real Estate, Construction, Tech Services. Kampala, Uganda.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIMad Enterprises</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <div class="brand">
-      <img src="images/rimad-logo.png" alt="RIMad logo" class="logo">
-      <div class="brand-text">
-        <h1>RIMad Enterprises</h1>
-        <p class="tagline">Inspired to build, grow and lead</p>
-      </div>
-    </div>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="team.html">Team</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+  <header class="navbar">
+    <img src="logo.png" alt="RIMad Enterprises Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main>
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div class="hero-text">
-        <h2>RIMad Enterprises</h2>
-        <p class="lead">Inspired to build, grow and lead</p>
-        <p class="muted">We are a multi-business enterprise operating across Real Estate, Construction and Technology services — delivering quality, integrity and sustainable growth.</p>
-        <div class="cta-row">
-          <a class="btn primary" href="contact.html">Get in touch</a>
-          <a class="btn ghost" href="projects.html">View Projects</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/hero-office.jpg" alt="RIMad Enterprise">
-      </div>
+  <section id="home" class="hero">
+    <div class="hero-content fade-in">
+      <img src="logo.png" alt="RIMad Logo" class="hero-logo">
+      <h1>Inspired to Build, Grow and Lead</h1>
     </div>
   </section>
 
-  <section class="overview wrap">
-    <h3>Our Expertise</h3>
-    <div class="grid-3">
-      <div class="card">
-        <h4>Real Estate</h4>
-        <p>Property development, sales and management for residential and commercial clients.</p>
-      </div>
-      <div class="card">
-        <h4>Construction</h4>
-        <p>Design, build and handover — delivering projects on time and within budget.</p>
-      </div>
-      <div class="card">
-        <h4>Tech Services</h4>
-        <p>Digital systems, web & mobile apps, and business integrations to streamline operations.</p>
-      </div>
+  <section id="about" class="fade-in">
+    <h2>About Us</h2>
+    <p>RIMad Enterprises is a diversified multi-business company headquartered in Kampala. We specialize in real estate, construction, technology services, catering, and more — striving for excellence and innovation in every sector we operate in.</p>
+  </section>
+
+  <section id="services" class="fade-in">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card"><h3>Real Estate</h3><p>Developing modern and sustainable properties across Uganda.</p></div>
+      <div class="service-card"><h3>Construction</h3><p>Providing high-quality construction services with integrity and expertise.</p></div>
+      <div class="service-card"><h3>Technology</h3><p>Offering innovative tech solutions for businesses and individuals.</p></div>
+      <div class="service-card"><h3>Catering</h3><p>Delivering top-class catering and hospitality services for all events.</p></div>
     </div>
   </section>
 
-  <section class="wrap quick-contact">
-    <div class="contact-card card">
-      <h3>Ready to start a project?</h3>
-      <p>Contact RIMad Enterprises to discuss your requirements and receive a professional proposal.</p>
-      <a class="btn primary" href="contact.html">Contact Us</a>
+  <section id="team" class="fade-in">
+    <h2>Our Team</h2>
+    <div class="team">
+      <div class="team-member"><h3>Ssekulima Brian Reagan</h3><p>Chairman</p></div>
+      <div class="team-member"><h3>Madrine Mutebi</h3><p>CEO</p></div>
+      <div class="team-member"><h3>Katuluba Paul</h3><p>CEO</p></div>
+      <div class="team-member"><h3>Sseruwu Edrine Ryan</h3><p>Chief Technology Officer</p></div>
+      <div class="team-member"><h3>Abaho Bruce</h3><p>Chief Marketing Officer</p></div>
+      <div class="team-member"><h3>Mugendawala Francis</h3><p>Chief Operating Officer</p></div>
     </div>
   </section>
-</main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div>© 2025 RIMad Enterprises. All rights reserved.</div>
-    <div class="small">Kampala, Uganda • 0704181124 • litboyforever256@gmail.com</div>
-  </div>
-</footer>
+  <section id="contact" class="fade-in contact-section">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xpwovenv" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="location">📍 Kampala, Uganda</p>
+    <p>📞 0704181124 | ✉️ litboyforever256@gmail.com</p>
+  </section>
 
+  <footer>
+    <p>© 2025 RIMad Enterprises. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
