@@ -1,77 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>RIMad Enterprises</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta name="description" content="RIMad Enterprises — Real Estate, Construction, Tech & Catering. Kampala, Uganda.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <img src="logo.png" alt="RIMad Enterprises Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="RIMad logo" class="logo">
+        <div class="brand-text">
+          <h1>RIMad Enterprises</h1>
+          <p class="tagline">Inspired to build, grow and lead</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content fade-in">
-      <img src="logo.png" alt="RIMad Logo" class="hero-logo">
-      <h1>Inspired to Build, Grow and Lead</h1>
+  <main>
+    <!-- HERO: half-page -->
+    <section class="hero-compact" id="home">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <img src="images/logo.png" alt="RIMad logo" class="hero-logo">
+          <h2>Inspired to build, grow and lead</h2>
+          <p class="lead">We deliver integrated Real Estate, Construction, Technology and Catering solutions with integrity and professional excellence.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="about.html">Explore More</a>
+          </div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Corporate visual"></div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="wrap intro fade">
+      <h3>About RIMad</h3>
+      <p class="muted">RIMad Enterprises is a multi-business group based in Kampala, Uganda. We blend local expertise with professional standards to deliver projects that uplift communities — across property development, contracting, technology solutions and catering services.</p>
+    </section>
+
+    <!-- Highlights / Stats -->
+    <section class="wrap stats fade">
+      <div class="grid-4">
+        <div class="stat card"><div class="stat-num">10+</div><div class="stat-label">Projects Completed</div></div>
+        <div class="stat card"><div class="stat-num">6</div><div class="stat-label">Executive Leaders</div></div>
+        <div class="stat card"><div class="stat-num">Kampala</div><div class="stat-label">Headquarters</div></div>
+        <div class="stat card"><div class="stat-num">Trusted</div><div class="stat-label">By Clients Nationwide</div></div>
+      </div>
+    </section>
+
+    <!-- Core values -->
+    <section class="wrap values fade">
+      <h3>Our Core Values</h3>
+      <div class="grid-4">
+        <div class="value card"><strong>Integrity</strong><p class="muted">Ethical delivery and transparency.</p></div>
+        <div class="value card"><strong>Innovation</strong><p class="muted">Modern methods and tech-driven solutions.</p></div>
+        <div class="value card"><strong>Quality</strong><p class="muted">Built to last with attention to detail.</p></div>
+        <div class="value card"><strong>Leadership</strong><p class="muted">Guiding projects to success.</p></div>
+      </div>
+    </section>
+
+    <!-- Services preview -->
+    <section class="wrap services-preview fade">
+      <h3>Services</h3>
+      <div class="grid-4">
+        <div class="service card"><h4>Real Estate</h4><p class="muted">Development, sales and property management.</p></div>
+        <div class="service card"><h4>Construction</h4><p class="muted">Professional contracting and project management.</p></div>
+        <div class="service card"><h4>Technology</h4><p class="muted">Web, mobile apps and business systems.</p></div>
+        <div class="service card"><h4>Catering</h4><p class="muted">Events and corporate catering solutions.</p></div>
+      </div>
+      <div class="center" style="margin-top:18px"><a class="btn ghost" href="services.html">View All Services</a></div>
+    </section>
+
+    <!-- Projects preview -->
+    <section class="wrap projects-preview fade">
+      <h3>Projects</h3>
+      <div class="grid-3">
+        <div class="proj card"><img src="images/project1.jpg" alt=""><h4>Residential Development — Kampala</h4></div>
+        <div class="proj card"><img src="images/project2.jpg" alt=""><h4>Commercial Fit-out</h4></div>
+        <div class="proj card"><img src="images/project3.jpg" alt=""><h4>Business Tech Platform</h4></div>
+      </div>
+      <p class="center muted" style="margin-top:12px"><strong>Want to start a new project? Let’s work together.</strong></p>
+      <div class="center" style="margin-top:12px"><a class="btn primary" href="projects.html">See Projects</a></div>
+    </section>
+
+    <!-- Team preview -->
+    <section class="wrap team-preview fade">
+      <h3>Our Leadership</h3>
+      <div class="grid-3">
+        <div class="team card"><h4>Ssekulima Brian Regan</h4><p class="muted">Chairman</p></div>
+        <div class="team card"><h4>Madrine Mutebi</h4><p class="muted">Chief Executive Officer</p></div>
+        <div class="team card"><h4>Katuluba Paul</h4><p class="muted">Chief Executive Officer</p></div>
+      </div>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="team card"><h4>Sseruwu Edrine Ryan</h4><p class="muted">Chief Technology Officer</p></div>
+        <div class="team card"><h4>Abaho Bruce</h4><p class="muted">Chief Marketing Officer</p></div>
+        <div class="team card"><h4>Mugendawala Francis</h4><p class="muted">Chief Operating Officer</p></div>
+      </div>
+      <div class="center" style="margin-top:14px"><a class="btn ghost" href="team.html">Meet the full team</a></div>
+    </section>
+
+    <!-- Contact preview -->
+    <section class="wrap contact-preview fade">
+      <h3>Contact</h3>
+      <p class="muted">Kampala, Uganda • 0704181124 • litboyforever256@gmail.com</p>
+      <div class="center" style="margin-top:12px"><a class="btn primary" href="contact.html">Get in touch</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2025 RIMad Enterprises. All rights reserved.</div>
+      <div class="muted">Kampala, Uganda • 0704181124 • litboyforever256@gmail.com</div>
     </div>
-  </section>
-
-  <section id="about" class="fade-in">
-    <h2>About Us</h2>
-    <p>RIMad Enterprises is a diversified multi-business company headquartered in Kampala. We specialize in real estate, construction, technology services, catering, and more — striving for excellence and innovation in every sector we operate in.</p>
-  </section>
-
-  <section id="services" class="fade-in">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-card"><h3>Real Estate</h3><p>Developing modern and sustainable properties across Uganda.</p></div>
-      <div class="service-card"><h3>Construction</h3><p>Providing high-quality construction services with integrity and expertise.</p></div>
-      <div class="service-card"><h3>Technology</h3><p>Offering innovative tech solutions for businesses and individuals.</p></div>
-      <div class="service-card"><h3>Catering</h3><p>Delivering top-class catering and hospitality services for all events.</p></div>
-    </div>
-  </section>
-
-  <section id="team" class="fade-in">
-    <h2>Our Team</h2>
-    <div class="team">
-      <div class="team-member"><h3>Ssekulima Brian Reagan</h3><p>Chairman</p></div>
-      <div class="team-member"><h3>Madrine Mutebi</h3><p>CEO</p></div>
-      <div class="team-member"><h3>Katuluba Paul</h3><p>CEO</p></div>
-      <div class="team-member"><h3>Sseruwu Edrine Ryan</h3><p>Chief Technology Officer</p></div>
-      <div class="team-member"><h3>Abaho Bruce</h3><p>Chief Marketing Officer</p></div>
-      <div class="team-member"><h3>Mugendawala Francis</h3><p>Chief Operating Officer</p></div>
-    </div>
-  </section>
-
-  <section id="contact" class="fade-in contact-section">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/xpwovenv" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p class="location">📍 Kampala, Uganda</p>
-    <p>📞 0704181124 | ✉️ litboyforever256@gmail.com</p>
-  </section>
-
-  <footer>
-    <p>© 2025 RIMad Enterprises. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

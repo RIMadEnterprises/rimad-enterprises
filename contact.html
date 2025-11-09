@@ -1,55 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - RIMad Enterprises</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — RIMad Enterprises</title><link rel="stylesheet" href="style.css"></head>
 <body>
-  <header>
-    <h1>RIMad Enterprises</h1>
-    <p class="tagline">Inspired to build, grow and lead</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
-
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <p>Get in touch with RIMad Enterprises — we’re here to build, grow, and lead together.</p>
-
-    <form action="https://formspree.io/f/xpwovenv" method="POST" class="contact-form">
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+  <header class="site-header"><div class="wrap header-inner"><div class="brand"><img src="images/logo.png" class="logo"><div class="brand-text"><h1>RIMad Enterprises</h1><p class="tagline">Inspired to build, grow and lead</p></div></div><nav class="main-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="wrap">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div class="card">
+        <h4>Contact Details</h4>
+        <p><strong>Location:</strong> Kampala, Uganda</p>
+        <p><strong>Phone:</strong> 0704181124</p>
+        <p><strong>Email:</strong> litboyforever256@gmail.com</p>
+        <p><strong>Website:</strong> rimadenterprises.com</p>
       </div>
-
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      <div class="card contact-form">
+        <form id="contactForm" action="https://formspree.io/f/xpwovenv" method="POST">
+          <input type="hidden" name="company" value="RIMad Enterprises">
+          <label for="name">Name</label><input id="name" name="name" required>
+          <label for="email">Email or Phone</label><input id="email" name="email" required>
+          <label for="message">Message</label><textarea id="message" name="message" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+          <div id="formStatus" class="muted"></div>
+        </form>
       </div>
-
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-      </div>
-
-      <button type="submit">Send Message</button>
-      <p id="status"></p>
-    </form>
-  </section>
-
-  <footer>
-    <p>📍 Kampala, Uganda | 📞 0704 181 124 | ✉️ litboyforever256@gmail.com</p>
-    <p>© 2025 RIMad Enterprises. All rights reserved.</p>
-  </footer>
-
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap">© 2025 RIMad Enterprises. All rights reserved.</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
