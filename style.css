@@ -325,3 +325,35 @@ section {
 #about::after {
     display: none !important;
 }
+/* ===== FORCE FULL VISIBILITY FOR ALL SECTION HEADINGS ===== */
+
+section h2,
+section h3 {
+    opacity: 1 !important;
+    color: #0f172a !important;
+    font-weight: 700;
+}
+
+/* Subtitles or muted labels */
+.section-title,
+.section-heading {
+    opacity: 1 !important;
+    color: #0f172a !important;
+}
+
+/* Fix headings inside dark or overlay sections */
+section[class*="dark"] h2,
+section[class*="dark"] h3,
+section[class*="overlay"] h2,
+section[class*="overlay"] h3 {
+    opacity: 1 !important;
+    color: #f9fafb !important;
+}
+#trust,
+#trust * {
+    opacity: 1 !important;
+}
+
+#trust {
+    background: #f8fafc;
+}
