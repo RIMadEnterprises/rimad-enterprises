@@ -268,3 +268,33 @@ section {
 #buildmart h2 {
     color: #1f2933 !important;
 }
+/* ===== FIX ABOUT SECTION VISIBILITY (DESKTOP & MOBILE) ===== */
+
+#about {
+    background-color: #ffffff;
+}
+
+#about h2 {
+    color: #1f2933 !important;
+    font-weight: 700;
+}
+
+#about p {
+    color: #1f2933 !important;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    opacity: 1 !important;
+}
+
+#about strong {
+    color: #111827 !important;
+}
+
+#about .team-member p {
+    color: #1f2933 !important;
+}
+#about {
+    border-radius: 18px;
+    padding: 80px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
