@@ -164,3 +164,44 @@ section {
         text-align: center;
     }
 }
+.service-icon {
+    font-size: 40px;
+    color: #ff7f2a;
+    margin-bottom: 15px;
+}
+#stats {
+    background: white;
+    text-align: center;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+}
+.stat h3 {
+    font-size: 2.2rem;
+    color: #ff7f2a;
+}
+.stat p {
+    font-weight: 600;
+}
+.founder-quote {
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff4ec;
+    border-left: 5px solid #ff7f2a;
+    font-style: italic;
+    border-radius: 10px;
+}
+.founder-quote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.footer {
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
