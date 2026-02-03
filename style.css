@@ -452,3 +452,7 @@ section p:first-of-type {
         height: 56px;
     }
 }
+.company-card h3 {
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
