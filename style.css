@@ -205,3 +205,31 @@ section {
     padding: 30px 20px;
     font-size: 0.9rem;
 }
+#contact {
+    background: #1f2933;
+    color: #ffffff;
+}
+
+#contact h2 {
+    color: #ffffff;
+}
+
+#contact p {
+    color: #e5e7eb;
+    font-size: 1.05rem;
+}
+#contact .btn.primary {
+    background-color: #ff7f2a;
+    color: #ffffff;
+}
+
+#contact .btn.secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+#contact .btn.secondary:hover {
+    background-color: #ffffff;
+    color: #1f2933;
+}
