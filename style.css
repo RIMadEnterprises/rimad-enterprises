@@ -298,3 +298,30 @@ section {
     padding: 80px 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.04);
 }
+/* ===== FORCE FULL VISIBILITY FOR WHO WE ARE SECTION ===== */
+
+#about,
+#about * {
+    opacity: 1 !important;
+    color: #111827 !important;
+}
+
+#about {
+    background: #ffffff !important;
+}
+
+#about h2 {
+    color: #0f172a !important;
+    font-weight: 700;
+}
+
+#about p {
+    color: #1f2937 !important;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+#about::before,
+#about::after {
+    display: none !important;
+}
