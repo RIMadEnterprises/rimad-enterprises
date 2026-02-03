@@ -423,3 +423,32 @@ section p:first-of-type {
         height: 3px;
     }
 }
+/* ===== COMPANY LOGO STYLING ===== */
+
+.company-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.company-card:hover .company-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Card alignment */
+.company-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+@media (max-width: 768px) {
+    .company-logo {
+        width: 56px;
+        height: 56px;
+    }
+}
