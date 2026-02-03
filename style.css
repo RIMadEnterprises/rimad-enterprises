@@ -357,3 +357,69 @@ section[class*="overlay"] h3 {
 #trust {
     background: #f8fafc;
 }
+/* ===== PREMIUM HEADING POLISH ===== */
+
+/* Main section headings */
+section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.75rem;
+    position: relative;
+    line-height: 1.2;
+}
+
+/* Accent underline */
+section h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    margin-top: 10px;
+    background: linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e
+    );
+    border-radius: 6px;
+}
+
+/* Sub-headings */
+section h3 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Section intro text */
+.section-intro,
+.section-subtitle,
+section p:first-of-type {
+    max-width: 720px;
+    font-size: 1.05rem;
+    color: #334155;
+}
+/* ===== DARK SECTION HEADINGS ===== */
+
+.dark-section h2,
+.dark-section h3 {
+    color: #f8fafc;
+}
+
+.dark-section h2::after {
+    background: linear-gradient(
+        90deg,
+        #22c55e,
+        #86efac
+    );
+}
+
+.dark-section p {
+    color: #cbd5f5;
+}
+@media (max-width: 768px) {
+    section h2::after {
+        width: 36px;
+        height: 3px;
+    }
+}
