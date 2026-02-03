@@ -233,3 +233,38 @@ section {
     background-color: #ffffff;
     color: #1f2933;
 }
+/* ===== FORCE READABILITY OVERRIDES ===== */
+
+/* Any section with dark background */
+#contact,
+#contact * ,
+.footer,
+.footer * {
+    color: #ffffff !important;
+}
+
+/* Paragraphs on dark backgrounds */
+#contact p,
+.footer p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    font-weight: 500;
+}
+
+/* Headings on dark backgrounds */
+#contact h2,
+.footer h2,
+.footer h3 {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+/* Secondary text (still readable, not faint) */
+#contact .secondary-text {
+    color: #f9fafb !important;
+}
+#buildmart,
+#buildmart p,
+#buildmart h2 {
+    color: #1f2933 !important;
+}
